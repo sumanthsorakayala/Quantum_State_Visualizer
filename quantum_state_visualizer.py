@@ -44,7 +44,7 @@ def density_matrix_to_bloch(dm):
     bloch_z = np.real(np.trace(dm @ Z))
     return [bloch_x, bloch_y, bloch_z]
 st.set_page_config(page_title="Quantum State Visualizer", layout="wide")
-st.title("Quantum State Visualizer (Stateathon Edition)")
+st.title("Quantum State Visualizer")
 st.markdown("Visualize **each qubit's state** on the Bloch sphere from any quantum circuit.")
 num_qubits = st.slider("Number of Qubits", 1, 4, 2)
 qc = QuantumCircuit(num_qubits)
